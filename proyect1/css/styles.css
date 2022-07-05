@@ -1,0 +1,115 @@
+/* Typographies Sections */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&display=swap');
+
+/* Root Section */
+:root {
+
+   /* Colours Section */
+   --clr-bg:#F5F5F5;
+   --clr-texts:#000;
+   --clr-orange:#FFC271;
+   --clr-btns:#CB95E7;
+   --clr-pink:#FFB8CE;
+   --clr-yellow:#FFE780;
+   --clr-gray:#5B5B5B;
+
+   /* Line-height Section */
+   --line-height-title-mobile:1.5;
+   --line-height-title-tablet:1.5;
+   --line-height-title-desktop:1.5;
+
+   --line-height-paragraph-mobile:1.5;
+   --line-height-paragraph-tablet:1.5;
+   --line-height-paragraph-desktop:1.5;
+
+   /* Font-size Section */
+   --fs-title-h1-mobile:16px;
+   --fs-title-h1-tablet:20px;
+   --fs-title-h1-desktop:50px;
+
+   --fs-title-mobile:32px;
+   --fs-title-tablet:48px;
+   --fs-title-desktop:50px;
+
+   --fs-paragraph-mobile:16px;
+   --fs-paragraph-tablet:20px;
+   --fs-paragraph-desktop:25px;
+
+   --fs-subtitle-mobile:24px;
+   --fs-subtitle-tablet:36px;
+   --fs-subtitle-desktop:50px;
+
+   --fs-utilies-links-mobile:20px;
+   --fs-utilies-links-tablet:24px;
+   --fs-utilies-links-desktop:28px;
+
+   --fs-information-number-mobile:18px;
+   --fs-information-number-tablet:24px;
+   --fs-information-number-desktop:30px;
+
+   --fs-information-text-mobile:16px;
+   --fs-information-text-tablet:20px;
+   --fs-information-text-desktop:20px;
+
+   --fs-team-names-mobile:24px;
+   --fs-team-names-tablet:24px;
+   --fs-team-names-desktop:24px;
+
+   --fs-our-gods-subtitle-mobile:24px;
+   --fs-our-gods-subtitle-tablet:36px;
+   --fs-our-gods-subtitle-desktop:50px;
+
+   --fs-team-work-mobile:16px;
+   --fs-team-work-tablet:16px;
+   --fs-team-work-desktop:16px;
+
+   /* Font-family Section */
+   --ff-paragraphs:'Roboto Serif', serif;
+   --ff-titles: 'Brygada 1918', serif;
+
+   /* Text-align Section */
+   --text-align-left:left;
+   --text-align-center:center;
+
+   /* Padding Section */
+   --padding-mobile: 0 25px;
+   --padding-tablet: 0 47px;
+   --padding-desktop: 0 52px;
+
+   /* Text-decoration Section */
+   --text-decoration:underline;
+
+   /* Box-shadow Section */
+   --drop-shadow: 0px 3px 7px #00000080;
+
+   /* Height Section */
+   --height-max-vh:100vh;
+
+   /* Width Section */
+   --width-one-hundred-percentage:100%; 
+   --width-fifty-percentage:50%;
+ 
+}
+/* HTML Section */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Section */
+body {
+    box-sizing: border-box;
+    font-family: var(--ff-paragraphs) , 'Roboto Serif', serif;
+    background-color: var(--clr-bg) , #F5F5F5;
+}
+
+/* Img Section */
+img {
+    max-width: var(--width-one-hundred-percentage) , 100%;
+}
+
+/* Hero Section */
+.hero {
+
+}
