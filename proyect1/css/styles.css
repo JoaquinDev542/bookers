@@ -14,6 +14,11 @@
    --clr-pink:#FFB8CE;
    --clr-yellow:#FFE780;
    --clr-gray:#5B5B5B;
+   --clr-bg-menu:#28282F;
+   --clr-bg-galley:#28282F;
+   --clr-black-half:#00000080;
+
+
 
    /* Line-height Section */
    --line-height-title-mobile:1.5;
@@ -51,7 +56,7 @@
 
    --fs-information-text-mobile:16px;
    --fs-information-text-tablet:20px;
-   --fs-information-text-desktop:20px;
+   --fs-information-text-desktop:25px;
 
    --fs-team-names-mobile:24px;
    --fs-team-names-tablet:24px;
@@ -64,6 +69,18 @@
    --fs-team-work-mobile:16px;
    --fs-team-work-tablet:16px;
    --fs-team-work-desktop:16px;
+
+   --fs-menu-link-mobile:30px;
+   --fs-menu-link-tablet:40px;
+   --fs-menu-link-desktop:50px;
+
+   --fs-menu-title-mobile:48px;
+   --fs-menu-title-tablet:68px;
+   --fs-menu-title-desktop:88px;
+
+   --fs-menu-copyright-mobile:16px; 
+   --fs-menu-copyright-tablet:26px; 
+   --fs-menu-copyright-desktop:26px; 
 
    /* Font-family Section */
    --ff-paragraphs:'Roboto Serif', serif;
@@ -83,6 +100,9 @@
 
    /* Box-shadow Section */
    --drop-shadow: 0px 3px 7px #00000080;
+
+   /* Bold Section */
+   --bold:bold;
 
    /* Height Section */
    --height-max-vh:100vh;
@@ -110,6 +130,5 @@ img {
 }
 
 /* Hero Section */
-.hero {
 
-}
+
