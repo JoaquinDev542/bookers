@@ -18,8 +18,6 @@
    --clr-bg-galley:#28282F;
    --clr-black-half:#00000080;
 
-
-
    /* Line-height Section */
    --line-height-title-mobile:1.5;
    --line-height-title-tablet:1.5;
@@ -29,55 +27,62 @@
    --line-height-paragraph-tablet:1.5;
    --line-height-paragraph-desktop:1.5;
 
-   /* Font-size Section */
+   /* Font-size Section // .title--h1 */
    --fs-title-h1-mobile:16px;
    --fs-title-h1-tablet:20px;
    --fs-title-h1-desktop:50px;
 
+   /*  .title */
    --fs-title-mobile:32px;
    --fs-title-tablet:48px;
    --fs-title-desktop:50px;
 
+   /* .paragraph */
    --fs-paragraph-mobile:16px;
    --fs-paragraph-tablet:20px;
    --fs-paragraph-desktop:25px;
 
+   /* .subtitle */
    --fs-subtitle-mobile:24px;
    --fs-subtitle-tablet:36px;
    --fs-subtitle-desktop:50px;
 
-   --fs-utilies-links-mobile:20px;
-   --fs-utilies-links-tablet:24px;
-   --fs-utilies-links-desktop:28px;
+   /* .utilitiesList__link */
+   --fs-utilities-links-mobile:20px;
+   --fs-utilities-links-tablet:24px;
+   --fs-utilities-links-desktop:28px;
 
+   /* .informationContentBox__number */
    --fs-information-number-mobile:18px;
    --fs-information-number-tablet:24px;
    --fs-information-number-desktop:30px;
 
+   /* .informationContentBox__text */
    --fs-information-text-mobile:16px;
    --fs-information-text-tablet:20px;
    --fs-information-text-desktop:25px;
 
+   /* .teamBox__title */
    --fs-team-names-mobile:24px;
    --fs-team-names-tablet:24px;
    --fs-team-names-desktop:24px;
 
-   --fs-our-gods-subtitle-mobile:24px;
-   --fs-our-gods-subtitle-tablet:36px;
-   --fs-our-gods-subtitle-desktop:50px;
-
+   /* .teamBox__work */
    --fs-team-work-mobile:16px;
    --fs-team-work-tablet:16px;
    --fs-team-work-desktop:16px;
 
+   /* .list__link */
    --fs-menu-link-mobile:30px;
    --fs-menu-link-tablet:40px;
    --fs-menu-link-desktop:50px;
 
+   /* .menuOpen__title */
    --fs-menu-title-mobile:48px;
    --fs-menu-title-tablet:68px;
    --fs-menu-title-desktop:88px;
 
+   /* .menuOpenFooter__copyright */
    --fs-menu-copyright-mobile:16px; 
    --fs-menu-copyright-tablet:26px; 
    --fs-menu-copyright-desktop:26px; 
@@ -129,6 +134,52 @@ img {
     max-width: var(--width-one-hundred-percentage) , 100%;
 }
 
-/* Hero Section */
+/* font-size Section 375px */
 
+.title {
+    font-size: var(--fs-title-h1-mobile);
+}
 
+.title-h1 {
+    font-size: var(--fs-title-mobile);
+}
+
+.subtitle {
+    font-size: var(--fs-subtitle-mobile) ;
+}
+
+.paragraph {
+    font-size: var(--fs-paragraph-mobile);
+}
+
+.utilitiesList__link {
+    font-size: var(--fs-utilities-links-mobile);
+}
+
+.informationContentBox__number {
+    font-size: var(--fs-information-number-mobile);
+}
+
+.informationContentBox__text {
+    font-size: var(--fs-information-text-mobile);
+}
+
+.teamBox__title {
+    font-size: var(--fs-team-names-mobile);
+}
+
+.teamBox__work {
+    font-size: var(--fs-team-work-mobile);
+}
+
+.list__link {
+    font-size: var(--fs-menu-link-mobile);
+}
+
+.menuOpen__title {
+    font-size: var(--fs-menu-title-mobile);
+}
+
+.menuOpenFooter__copyright {
+    font-size: var(--fs-menu-copyright-mobile);    
+}

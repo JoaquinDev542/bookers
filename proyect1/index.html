@@ -13,9 +13,9 @@
     <main class="main">
 
         <!-- Section Hero --> 
-        <section class="hero">
+        <div class="hero">
 
-            <article class="heroImg">
+            <div class="heroImg">
 
                 <header class="header">
                 
@@ -23,53 +23,53 @@
 
                         <a href="#" class="menu"><img src="assets/images/icons/Hamburguer-Icon-White.svg" alt="Menu icon Hamburger" class="menu__img"></a>
 
-                        <section class="menuOpen">
+                        <div class="menuOpen">
 
                             <a href="#" class="menuOpen__closeLink"><img src="assets/images/icons/X.svg" alt="Close Menu Icon" class="menuOpen__closeImg"></a>
 
                             <strong class="menuOpen__title">Bookers Club</strong>
 
-                            <ul class="list">
+                            <div class="listContainer">
 
-                                <div class="listFirst">
+                                <ul class="list list--first">
 
                                     <li class="list__item">
                                         <a href="#gallery" class="list__link">Galería</a>
                                     </li> 
-    
+        
                                     <li class="list__item">
                                         <a href="#collection" class="list__link">Colección</a>
                                     </li>
-    
+        
                                     <li class="list__item">
                                         <a href="#information" class="list__link">Información</a>
                                     </li>
-    
+        
                                     <li class="list__item">
                                         <a href="#gods" class="list__link">Nuestros Dioses</a>
                                     </li>
-
-                                </div>
-
-                                <div class="listSecond">
-
+    
+                                </ul>
+    
+                                <ul class="list list--second">
+    
                                     <li class="list__item">
                                         <a href="#roadmap" class="list__link">RoadMap</a>
                                     </li>
-
+    
                                     <li class="list__item">
                                         <a href="#utilities" class="list__link">Utilidades</a>
                                     </li>
-
+    
                                     <li class="list__item">
                                         <a href="#team" class="list__link">Team</a>
                                     </li>
+    
+                                </ul>
 
-                                </div>
+                            </div>
 
-                            </ul>
-
-                            <section class="menuOpenFooter">
+                            <div class="menuOpenFooter">
 
                                 <p class="menuOpenFooter__copyright">All rights reserved 2022 &copy;</p>
 
@@ -81,17 +81,17 @@
 
                                 </div>
 
-                            </section>
+                            </div>
 
-                        </section>
+                        </div>
 
                     </nav>
             
                 </header>
 
-            </article>
+            </div>
  
-            <article class="heroContent">
+            <section class="heroContent">
 
                 <div class="socialMedia">
 
@@ -113,46 +113,46 @@
 
                 <p class="heroContent__paragraph paragraph">La utilidad del NFT es dar acceso vitalicio a la biblioteca de +500 resúmenes de lubros de <a href="https://www.leadersummaries.com/" class="heroContent__links" target="_blank">Leader Summaries</a>y<a href="https://flashlibros.com/" class="heroContent__links" target="_blank">Flash Libros</a>, asi como a áreas exclusivas dentro de la comunidad de Discord.</p>
 
-            </article>
+            </section>
        
-        </section>
+        </div>
 
         <!-- Section Gallery -->
         <section class="gallery" id="gallery">
 
             <h2 class="gallery__title title">Galería</h2>
 
-            <section class="galleryImg">
+            <div class="galleryImg">
 
                 <div class="galleryContainer">
 
-                    <article class="galleryBox">
+                    <div class="galleryBox">
                         
                         <img src="assets/images/bg-images/bg-gallery1.jpeg" alt="Booker random NFT Image" class="galleryBox__img">
 
                         <a href="#" class="galleryBox__link">Ver en OpenSea</a>
                     
-                    </article>
+                    </div>
 
-                    <article class="galleryBox galleryBox--hidden">
+                    <div class="galleryBox galleryBox--hidden">
 
                         <img src="assets/images/bg-images/bg-gallery2.jpeg" alt="Booker random NFT Image" class="galleryBox__img">
 
                         <a href="#" class="galleryBox__link">Ver en OpenSea</a>
 
-                    </article>
+                    </div>
 
                 </div>
 
-            </section>
+            </div>
 
-            <section class="galleryContent">
+            <div class="galleryContent">
 
                 <p class="galleryContent__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra malesuada sit egestas vehicula lectus nunc. Quis sed pulvinar vestibulum at libero. Faucibus nulla proin feugiat laoreet. Etiam in blandit aliquet eget vitae sed morbi.s viverra gravida faucibus libero</p>
 
                 <a href="#collection" class="galleryContent__arrowLink"><img src="assets/images/icons/arrow.svg" alt="arrow-bottom icon" class="galleryContent__arrowImg"></a>
 
-            </section>
+            </div>
 
         </section>
 
@@ -162,18 +162,18 @@
             <h2 class="collection__title title">Colección de NFTs</h2>
 
             <div class="collectionImg">
+
                 <img src="assets/images/bg-images/bg-collection-booker.jpeg" alt="Background-Image booker club" class="collectionImg__img">
+
             </div>
 
-            <article class="collectionContent">
+            <div class="collectionContent">
 
                 <p class="collectionContent__paragraph paragraph">Bookers Club es una colección de 10.000 NFTs, con una serie de propiedades distintas</p>
 
                 <p class="collectionContent__paragraph paragraph">Las propiedades se dividen en:</p>
 
-                <ul class="collectionContentList">
-
-                    <div class="collectionContentListFirst">
+                <ul class="collectionContentList collectionContentList--first">
 
                         <li class="collectionContentList__item">Cabeza</li>
 
@@ -183,9 +183,9 @@
 
                         <li class="collectionContentList__item">Especialidad</li>
 
-                    </div>
+                </ul>
 
-                    <div class="collectionContentListSecond">
+                <ul class="collectionContentList collectionContentList--second">
 
                         <li class="collectionContentList__item">Fondo</li>
 
@@ -193,16 +193,16 @@
 
                         <li class="collectionContentList__item">Pendientes</li>
 
-                    </div>
-
                 </ul>
 
-            </article>
+            </div>
 
         </section>
 
         <!-- Section Information -->
         <section class="information" id="information">
+
+            <h2 class="information__title title">Información Actual</h2>
 
             <div class="informationImg">
                 
@@ -210,9 +210,9 @@
             
             </div>
 
-            <section class="informationContent">
+            <div class="informationContent">
 
-                <section class="informationContentBoxs">
+                <div class="informationContentBoxs">
 
                     <div class="informationContentBox">
 
@@ -258,11 +258,11 @@
 
                     </div>
 
-                </section>
+                </div>
 
                 <a href="#" class="informationContent__link">Ver en OpenSea</a>
 
-            </section>
+            </div>
 
         </section>
 
@@ -271,11 +271,11 @@
 
             <h2 class="gods__title title">Nuestros Dioses</h2>
 
-            <section class="godsImg">
+            <div class="godsImg">
 
                 <img src="assets/video/Inversion.webm" alt="Video bookers club Diosa de la Inversión" class="godsImg__img">
 
-            </section>
+            </div>
 
             <section class="godsContent">
 
@@ -288,7 +288,7 @@
         </section>
 
         <!-- Section RoadMap -->
-        <section class="roadmap" id="roadmap">
+        <div class="roadmap" id="roadmap">
 
             <article class="roadmapContainer roadmapContainer--first">
 
@@ -300,13 +300,13 @@
     
                 </div>
 
-                <article class="roadmapContent roadmapContent--community">
+                <section class="roadmapContent roadmapContent--community">
 
                     <h3 class="roadmapContent__title subtitle">1. Comunidad</h3>
 
                     <p class="roadmapContent__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris sed ornare rhoncus laoreet ligula nunc dignissim nunc. Gravida libero massa enim, et tempor. Proin cursus vulputate id ac ut tincidunt neque. In imperdiet elementum sed accumsan. Suscipit suspendisse auctor mauris, lectus facilisi. Aenean egestas scelerisque consectetur risus eu et, eu dui.</p>
 
-                </article>
+                </section>
 
             </article>
 
@@ -320,17 +320,17 @@
     
                 </div>
 
-                <article class="roadmapContent roadmapContent--community">
+                <section class="roadmapContent roadmapContent--collection">
 
-                    <h3 class="roadmapContent__title subtitle">1. Comunidad</h3>
+                    <h3 class="roadmapContent__title subtitle">2. Lanzamiento de la colección</h3>
 
                     <p class="roadmapContent__paragraph paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris sed ornare rhoncus laoreet ligula nunc dignissim nunc. Gravida libero massa enim, et tempor. Proin cursus vulputate id ac ut tincidunt neque. In imperdiet elementum sed accumsan. Suscipit suspendisse auctor mauris, lectus facilisi. Aenean egestas scelerisque consectetur risus eu et, eu dui.</p>
 
-                </article>
+                </section>
 
             </article> 
 
-        </section>
+        </div>
 
         <!-- Section Utilities -->
         <section class="utilities" id="utilities">
@@ -380,7 +380,7 @@
 
             <h2 class="team__title title">Team</h2>
 
-            <section class="teamBoxs">
+            <div class="teamBoxs">
 
                     <div class="teamBoxFirst">
 
@@ -430,7 +430,7 @@
 
                     </div>
 
-            </section>
+            </div>
 
             <footer class="footer">
 
