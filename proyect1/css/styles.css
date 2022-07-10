@@ -118,19 +118,19 @@
  
 }
 /* HTML Section */
-html {
+.html {
     scroll-behavior: smooth;
 }
 
 /* Body Section */
-body {
+.body {
     box-sizing: border-box;
     font-family: var(--ff-paragraphs) , 'Roboto Serif', serif;
     background-color: var(--clr-bg) , #F5F5F5;
 }
 
 /* Img Section */
-img {
+.img {
     max-width: var(--width-one-hundred-percentage) , 100%;
 }
 
