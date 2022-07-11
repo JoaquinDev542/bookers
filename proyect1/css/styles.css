@@ -131,11 +131,38 @@
 }
 
 /* Img Section */
-.img {
-    max-width: var(--width-one-hundred-percentage) , 100%;
+img {
+    max-width: var(--width-one-hundred-percentage , 100%) ;
 }
 
 /* font-size Section 375px */
+
+/* Hero Section 375px */
+/* .hero {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "heroImg"
+    "heroContent";
+    height: var(--height-max-vh , 100vh);
+}
+
+.heroImg {
+    grid-area: heroImg;
+    background-image: url(../assets/images/bg-images/bg-hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menuOpen {
+    display: none;
+}
+
+.heroContent {
+    grid-area: heroContent;
+    padding: var(--padding-mobile);
+} */
 
 .title {
     font-family: var(--ff-titles , 'Brygada 1918', serif);
