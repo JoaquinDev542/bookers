@@ -16,70 +16,84 @@
     /* Line-height Section */
     --line-height-title-mobile:1.5;
     --line-height-title-tablet:1.5;
+    --line-height-title-portatil:1.5;
     --line-height-title-desktop:1.5;
  
     --line-height-paragraph-mobile:1.5;
     --line-height-paragraph-tablet:1.5;
+    --line-height-paragraph-portatil:1.5;
     --line-height-paragraph-desktop:1.5;
  
     /* Font-size Section // .title--h1 */
     --fs-title-h1-mobile:16px;
     --fs-title-h1-tablet:20px;
+    --fs-title-h1-portatil:0px;
     --fs-title-h1-desktop:50px;
  
     /*  .title */
     --fs-title-mobile:32px;
     --fs-title-tablet:48px;
+    --fs-title-portatil:0px;
     --fs-title-desktop:50px;
  
     /* .paragraph */
     --fs-paragraph-mobile:16px;
     --fs-paragraph-tablet:20px;
+    --fs-paragraph-portatil:0px;
     --fs-paragraph-desktop:25px;
  
     /* .subtitle */
     --fs-subtitle-mobile:24px;
     --fs-subtitle-tablet:36px;
+    --fs-subtitle-portatil:0px;
     --fs-subtitle-desktop:50px;
  
     /* .utilitiesList__link */
     --fs-utilities-links-mobile:20px;
     --fs-utilities-links-tablet:24px;
+    --fs-utilities-links-portatil:0px;
     --fs-utilities-links-desktop:28px;
  
     /* .informationContentBox__number */
     --fs-information-number-mobile:18px;
     --fs-information-number-tablet:24px;
+    --fs-information-number-portatil:0px;
     --fs-information-number-desktop:30px;
  
     /* .informationContentBox__text */
     --fs-information-text-mobile:16px;
     --fs-information-text-tablet:20px;
+    --fs-information-text-portatil:0px;
     --fs-information-text-desktop:25px;
  
     /* .teamBox__title */
     --fs-team-names-mobile:24px;
     --fs-team-names-tablet:24px;
+    --fs-team-names-portatil:0px;
     --fs-team-names-desktop:24px;
  
     /* .teamBox__work */
     --fs-team-work-mobile:16px;
     --fs-team-work-tablet:16px;
+    --fs-team-work-portatil:0px;
     --fs-team-work-desktop:16px;
  
     /* .list__link */
     --fs-menu-link-mobile:30px;
     --fs-menu-link-tablet:40px;
+    --fs-menu-link-portatil:0px;
     --fs-menu-link-desktop:50px;
  
     /* .menuOpen__title */
     --fs-menu-title-mobile:48px;
     --fs-menu-title-tablet:68px;
+    --fs-menu-title-portatil:0px;
     --fs-menu-title-desktop:88px;
  
     /* .menuOpenFooter__copyright */
     --fs-menu-copyright-mobile:16px; 
     --fs-menu-copyright-tablet:26px; 
+    --fs-menu-copyright-portatil:0px; 
     --fs-menu-copyright-desktop:26px; 
  
     /* Font-family Section */
@@ -93,12 +107,14 @@
     /* Padding Section */
     --padding-mobile: 0 25px;
     --padding-tablet: 0 47px;
+    --padding-portatil: 0 0;
     --padding-desktop: 0 52px;
 
     /* Margin Section */
     --title-margin-mobile:30px;
     --title-margin-tablet:50px;
-
+    --title-margin-portatil:0px;
+    --title-margin-desktop:0px;
  
     /* Text-decoration Section */
     --text-decoration:underline;
