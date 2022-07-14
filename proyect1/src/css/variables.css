@@ -94,6 +94,11 @@
     --padding-mobile: 0 25px;
     --padding-tablet: 0 47px;
     --padding-desktop: 0 52px;
+
+    /* Margin Section */
+    --title-margin-mobile:30px;
+    --title-margin-tablet:50px;
+
  
     /* Text-decoration Section */
     --text-decoration:underline;
