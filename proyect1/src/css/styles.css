@@ -37,10 +37,11 @@ span {
     font-family: var(--ff-titles , 'Brygada 1918', serif);
     font-size: var(--fs-title-h1-mobile , 16px);
     line-height: var(--line-height-title-mobile , 1.5);
+    margin-top: 10px;
 }
 
 .title {
-    margin: var(--title-margin-mobile , 30px) ;
+    margin: var(--title-margin-mobile , 30px 0) ;
     padding: var(--padding-mobile , 0 25px);
     font-family: var(--ff-titles , 'Brygada 1918', serif);
     font-size: var(--fs-title-mobile  , 32px);
@@ -54,6 +55,7 @@ span {
 
 .paragraph {
     font-size: var(--fs-paragraph-mobile , 16px);
+    margin: var(--title-margin-mobile , 30px 0) ;
     line-height: var(--line-height-paragraph-mobile , 1.5);
 }
 
@@ -89,13 +91,16 @@ span {
 
 .heroContent {
     grid-area: heroContent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: var(--padding-mobile , 0 25px);
 }
 
 .socialMedia {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .socialMedia__links {
@@ -121,17 +126,33 @@ span {
     font-size: var(--fs-logo-mobile , 32px);
 }
 
+.heroContent__links {
+    color: var(--clr-texts , #000);
+}
+
 /* Gallery Section */
 .gallery {
-    height: var(--height-max-vh , 100vh);
+    min-height: var(--height-max-vh , 100vh);
 }
 
 .galleryContainer {
+    position: relative;
+}
+
+.galleryContainer::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 55%;
     background-color: var(--clr-bg-gallery , #28282F);
 }
 
 .galleryBox {
+    position: relative;
     padding: var(--padding-mobile , 0 25px);
+    z-index: 10;
 }
 
 .galleryBox--hidden {
@@ -139,12 +160,12 @@ span {
 }
 
 .galleryBox__link {
-    display: inline-block;
+    display: block;
     text-decoration: var(--text-decoration-none , none);
     color: var(--clr-white , #FFF);
     background-color: var(--clr-btns , #CB95E7);
-    padding: 7px 10px;
-    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .galleryContent {
@@ -153,6 +174,7 @@ span {
 }
 
 .galleryContent__paragraph {
+    margin-top: 50px;
     padding: var(--padding-mobile , 0 25px);
 }
 
@@ -162,31 +184,127 @@ span {
 
 .galleryContent__arrowImg {
     width: 50px;
+    margin-top: 25px;
 }
 
 /* Information Section */
 .information {
-    height: var(--height-max-vh , 100vh);
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.informationContentBoxs {
+    padding: 30px 60px;
+    background-color: red;
 }
 
 .informationContentBox__eth {
     width: 15px;
 }
 
+.informationContentBox__text {
+    color: var(--clr-gray , #5B5B5B);
+}
+
+.informationContent__link {
+    display: block;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ARREGLAR */
+
+/* Gods Section */
+.gods {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.godsContent__subtitle {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.godsContent__paragraph {
+    padding: var(--padding-mobile , 0 25px);
+}
 
 
+.godsContent__link {
+    display: block;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+    padding: 20px 0;
+    text-align: center;
+}
 
+/* RoadMap Section */
+.roadmap {
+    background-color: var(--clr-pink , #CB95E7) ;
+}
 
+.roadmapContainer {
+    min-height: var(--height-max-vh , 100vh);
+}
 
+.roadmapContainer__title--hidden {
+    display: none;
+}
 
+.roadmapImg__img {
+    margin: 100px auto;
+}
+
+.roadmapContent {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+/* Utilities Section */
+.utilities {
+    min-height: var(--height-max-vh , 100vh);
+    display: grid;
+    grid-template-rows: var(--width-fifty-percentage , 50%) var(--width-fifty-percentage , 50%);
+    grid-template-areas: 
+    "utilitiesContent"
+    "utilitiesImg";
+}
+
+.utilitiesContent {
+    grid-area: utilitiesContent;
+}
+
+.utilitiesList {
+    padding-left: 25px;
+}
+
+.utilitiesList__item {
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.utilitiesList__link {
+    color: var(--clr-texts , #000);
+    font-size: var(--fs-utilities-links-mobile , 20px);
+}
+
+.utilitiesImg {
+    grid-area: utilitiesImg;
+    background-color: var(--clr-yellow , #FFE780);
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.utilitiesImgList__item {
+    margin: 10px 0;
+}
+
+/* Team Section */
 
 
 
 /* font-size Section 375px */
 
-.utilitiesList__link {
-    font-size: var(--fs-utilities-links-mobile , 20px);
-}
+
 
 
 
