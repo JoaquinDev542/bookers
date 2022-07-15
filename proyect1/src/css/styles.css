@@ -65,7 +65,7 @@ span {
     grid-template-areas: 
     "heroImg"
     "heroContent";
-    height: var(--height-max-vh , 100vh);
+    min-height: var(--height-max-vh , 100vh);
 }
 
 .heroImg {
