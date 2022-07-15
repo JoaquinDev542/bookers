@@ -40,7 +40,7 @@ span {
 }
 
 .title {
-    margin: var(--title-margin-mobile) ;
+    margin: var(--title-margin-mobile , 30px) ;
     padding: var(--padding-mobile , 0 25px);
     font-family: var(--ff-titles , 'Brygada 1918', serif);
     font-size: var(--fs-title-mobile  , 32px);
