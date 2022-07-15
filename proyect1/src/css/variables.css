@@ -2,6 +2,7 @@
 :root {
 
     /* Colours Section */
+    --clr-white:#FFF;
     --clr-bg:#F5F5F5;
     --clr-texts:#000;
     --clr-orange:#FFC271;
@@ -10,7 +11,7 @@
     --clr-yellow:#FFE780;
     --clr-gray:#5B5B5B;
     --clr-bg-menu:#28282F;
-    --clr-bg-galley:#28282F;
+    --clr-bg-gallery:#28282F;
     --clr-black-half:#00000080;
  
     /* Line-height Section */
@@ -29,6 +30,12 @@
     --fs-title-h1-tablet:20px;
     --fs-title-h1-portatil:0px;
     --fs-title-h1-desktop:50px;
+
+    /* Logo Text // .logoContainer__text */
+    --fs-logo-mobile:32px;
+    --fs-logo-tablet:48px;
+    --fs-logo-portatil:0px;
+    --fs-logo-desktop:50px;
  
     /*  .title */
     --fs-title-mobile:32px;
@@ -111,10 +118,10 @@
     --padding-desktop: 0 52px;
 
     /* Margin Section */
-    --title-margin-mobile:30px;
-    --title-margin-tablet:50px;
-    --title-margin-portatil:0px;
-    --title-margin-desktop:0px;
+    --title-margin-mobile:25px 0;
+    --title-margin-tablet:50px 0 ;
+    --title-margin-portatil:0px 0;
+    --title-margin-desktop:0px 0;
  
     /* Text-decoration Section */
     --text-decoration:underline;

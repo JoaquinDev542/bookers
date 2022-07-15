@@ -6,13 +6,17 @@
 @import "variables.css";
 
 /* HTML Section */
+
+* , ::before , ::after {
+    box-sizing: border-box;
+}
+
 .html {
     scroll-behavior: smooth;
 }
 
 /* Body Section */
 .body {
-    box-sizing: border-box;
     font-family: var(--ff-paragraphs) , 'Roboto Serif', serif;
     background-color: var(--clr-bg , #F5F5F5) ;
 }
@@ -20,46 +24,26 @@
 /* Img Section */
 img {
     max-width: var(--width-one-hundred-percentage , 100%) ;
+    display: block;
 }
 
-/* font-size Section 375px */
-
-/* Hero Section 375px */
-/* .hero {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "heroImg"
-    "heroContent";
-    height: var(--height-max-vh , 100vh);
+/* Span Section */
+span {
+    display: block;
 }
 
-.heroImg {
-    grid-area: heroImg;
-    background-image: url(../assets/images/bg-images/bg-hero.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.menuOpen {
-    display: none;
-}
-
-.heroContent {
-    grid-area: heroContent;
-    padding: var(--padding-mobile);
-} */
-
-.title {
-    font-family: var(--ff-titles , 'Brygada 1918', serif);
-    font-size: var(--fs-title-mobile  , 32px);
-    line-height: var(--line-height-title-mobile , 1.5);
-}
-
+/* Font-size Section Important */
 .title-h1 {
     font-family: var(--ff-titles , 'Brygada 1918', serif);
     font-size: var(--fs-title-h1-mobile , 16px);
+    line-height: var(--line-height-title-mobile , 1.5);
+}
+
+.title {
+    margin: var(--title-margin-mobile) ;
+    padding: var(--padding-mobile , 0 25px);
+    font-family: var(--ff-titles , 'Brygada 1918', serif);
+    font-size: var(--fs-title-mobile  , 32px);
     line-height: var(--line-height-title-mobile , 1.5);
 }
 
@@ -73,17 +57,129 @@ img {
     line-height: var(--line-height-paragraph-mobile , 1.5);
 }
 
+/* Hero Section 375px */
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-rows: var(--width-fifty-percentage , 50%) var(--width-fifty-percentage , 50%) ;
+    grid-template-areas: 
+    "heroImg"
+    "heroContent";
+    height: var(--height-max-vh , 100vh);
+}
+
+.heroImg {
+    grid-area: heroImg;
+    background-image: url(/proyect1/assets/images/bg-images/bg-hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__img {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 30px;
+}
+
+.menuOpen {
+    display: none;
+}
+
+.heroContent {
+    grid-area: heroContent;
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.socialMedia__links {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: var(--clr-orange , #FFC271);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logoContainer__text {
+    font-family: var(--ff-titles , 'Brygada 1918', serif);
+    font-size: var(--fs-logo-mobile , 32px);
+}
+
+/* Gallery Section */
+.gallery {
+    height: var(--height-max-vh , 100vh);
+}
+
+.galleryContainer {
+    background-color: var(--clr-bg-gallery , #28282F);
+}
+
+.galleryBox {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.galleryBox--hidden {
+    display: none;
+}
+
+.galleryBox__link {
+    display: inline-block;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+    padding: 7px 10px;
+    margin-top: 20px;
+}
+
+.galleryContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryContent__paragraph {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.galleryContent__arrowLink {
+    align-self: center;
+}
+
+.galleryContent__arrowImg {
+    width: 50px;
+}
+
+/* Information Section */
+.information {
+    height: var(--height-max-vh , 100vh);
+}
+
+.informationContentBox__eth {
+    width: 15px;
+}
+
+/* font-size Section 375px */
+
 .utilitiesList__link {
     font-size: var(--fs-utilities-links-mobile , 20px);
 }
 
-.informationContentBox__number {
-    font-size: var(--fs-information-number-mobile , 18px);
-}
 
-.informationContentBox__text {
-    font-size: var(--fs-information-text-mobile , 16px);
-}
 
 .teamBox__title {
     font-size: var(--fs-team-names-mobile , 24px);
@@ -105,125 +201,3 @@ img {
     font-size: var(--fs-menu-copyright-mobile , 16px);    
 }
 
-/* Media Screen 768px */
-@media screen and (min-width:768px) {
-
-    /* font-size Section 768px */
-
-    .title {
-        font-size: var(--fs-title-tablet , 48px);
-        line-height: var(--line-height-title-tablet , 1.5);
-    }
-
-    .title-h1 {
-        font-size: var(--fs-title-h1-tablet , 20px);
-        line-height: var(--line-height-title-tablet , 1.5);
-    }
-
-    .subtitle {
-        font-size: var(--fs-subtitle-tablet , 36px) ;
-        line-height: var(--line-height-title-tablet , 1.5);
-    }
-
-    .paragraph {
-        font-size: var(--fs-paragraph-tablet , 20px);
-        line-height: var(--line-height-paragraph-tablet , 1.5);
-    }
-
-    .utilitiesList__link {
-        font-size: var(--fs-utilities-links-tablet , 24px);
-    }
-
-    .informationContentBox__number {    
-        font-size: var(--fs-information-number-tablet , 24px);
-    }
-
-    .informationContentBox__text {
-        font-size: var(--fs-information-text-tablet , 20px);
-    }
-
-    .teamBox__title {
-        font-size: var(--fs-team-names-tablet , 24px);
-    }
-
-    .teamBox__work {
-        font-size: var(--fs-team-work-tablet , 16px);
-    }
-
-    .list__link {
-        font-size: var(--fs-menu-link-tablet , 40px);
-    }
-
-    .menuOpen__title {
-        font-size: var(--fs-menu-title-tablet , 68px);
-    }
-
-    .menuOpenFooter__copyright {
-        font-size: var(--fs-menu-copyright-tablet , 26px);    
-    }
-
-}
-
-/* Media Screen 1024px */
-@media screen and (min-width:1024px) {
-
-}
-
-/* Media Screen 1440px */
-@media screen and (min-width:1440px) {
-
-    /* font-size Section 1440px */
-
-    .title {
-        font-size: var(--fs-title-desktop , 50px);
-        line-height: var(--line-height-title-desktop , 1.5);
-    }
-
-    .title-h1 {
-        font-size: var(--fs-title-h1-desktop , 50px);
-        line-height: var(--line-height-title-desktop , 1.5);
-    }
-
-    .subtitle {
-        font-size: var(--fs-subtitle-desktop , 50px) ;
-        line-height: var(--line-height-title-desktop , 1.5);
-    }
-
-    .paragraph {
-        font-size: var(--fs-paragraph-desktop , 25px);
-        line-height: var(--line-height-paragraph-desktop , 1.5);
-    }
-
-    .utilitiesList__link {
-        font-size: var(--fs-utilities-links-desktop , 28px);
-    }
-
-    .informationContentBox__number {    
-        font-size: var(--fs-information-number-desktop , 30px);
-    }
-
-    .informationContentBox__text {
-        font-size: var(--fs-information-text-desktop , 25px);
-    }
-
-    .teamBox__title {
-        font-size: var(--fs-team-names-desktop , 24px);
-    }
-
-    .teamBox__work {
-        font-size: var(--fs-team-work-desktop , 16px);
-    }
-
-    .list__link {
-        font-size: var(--fs-menu-link-desktop , 50px);
-    }
-
-    .menuOpen__title {
-        font-size: var(--fs-menu-title-desktop , 88px);
-    }
-
-    .menuOpenFooter__copyright {
-        font-size: var(--fs-menu-copyright-desktop , 26px);    
-    }
-
-}
