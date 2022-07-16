@@ -1,17 +1,21 @@
-const $menu = document.querySelector("#menu");
-const $menuOpen = document.querySelector("#menuOpen");
-const $menuClose = document.querySelector("#menuOpen__closeLink");
+window.addEventListener ('load', function () {  
 
-const menuFunction = function () {
-    $menu.addEventListener("click" , ()=> {
-        $menuOpen.classList.add("active");
-    })
-}
-menuFunction();
+    const $menu = document.querySelector("#menu");
+    const $menuOpen = document.querySelector("#menuOpen");
+    const $menuClose = document.querySelector("#menuOpen__closeLink");
 
-const menuFunctionClose = function () {
-    $menuClose.addEventListener("click" , () => {
-        $menuOpen.classList.remove("active");
-    })
-}
-menuFunctionClose();
+    const menuFunction = function () {
+        $menu.addEventListener("click" , ()=> {
+            $menuOpen.classList.add("active");
+        })
+    }
+    menuFunction();
+
+    const menuFunctionClose = function () {
+        $menuClose.addEventListener("click" , () => {
+            $menuOpen.classList.remove("active");
+        })
+    }
+    menuFunctionClose();
+
+})
