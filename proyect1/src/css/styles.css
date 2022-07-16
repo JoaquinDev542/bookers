@@ -24,7 +24,7 @@
 
 /* Img Section */
 img {
-    display: block;
+    display:block;
     max-width: var(--width-one-hundred-percentage , 100%) ;
 }
 
@@ -100,7 +100,6 @@ span {
 }
 
 /* Menu Open */
-
 
 .list__link {
     font-size: var(--fs-menu-link-mobile , 30px);
@@ -268,6 +267,14 @@ span {
 
 .roadmapContainer {
     min-height: var(--height-max-vh , 100vh);
+}
+
+.roadmapImg__img--second {
+    padding-top: 50px;
+}
+
+.roadmapContainer__title {
+    padding-top: 30px;
 }
 
 .roadmapContainer__title--hidden {
