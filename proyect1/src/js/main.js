@@ -1,5 +1,5 @@
 const $menu = document.querySelector("#menu");
-const menuOpen = document.querySelector("#menuOpen");
+const $menuOpen = document.querySelector("#menuOpen");
 
 const menuFunction = function () {
     $menu.addEventListener("click" , ()=> {
