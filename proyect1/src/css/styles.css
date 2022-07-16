@@ -216,16 +216,27 @@ span {
     min-height: var(--height-max-vh , 100vh);
 }
 
-.informationContentBoxs {
-    padding: 30px 60px;
-    background-color: red;
+.informationContentBoxContainer {
+    display: flex;
+    margin: 50px 0px 50px 50px;
+}
+
+.informationContentBox__container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.informationContentBox {
+    width: 100%;
 }
 
 .informationContentBox__eth {
-    width: 15px;
+    width: 13px;
 }
 
 .informationContentBox__text {
+    margin-top: 5px;
     color: var(--clr-gray , #5B5B5B);
 }
 
