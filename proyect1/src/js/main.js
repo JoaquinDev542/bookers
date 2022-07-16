@@ -1,5 +1,6 @@
 const $menu = document.querySelector("#menu");
-const menuOpen = document.querySelector("#menuOpen");
+const $menuOpen = document.querySelector("#menuOpen");
+const $menuClose = document.querySelector("#menuOpen__closeLink");
 
 const menuFunction = function () {
     $menu.addEventListener("click" , ()=> {
@@ -7,3 +8,10 @@ const menuFunction = function () {
     })
 }
 menuFunction();
+
+const menuFunctionClose = function () {
+    $menuClose.addEventListener("click" , () => {
+        $menuOpen.classList.remove("active");
+    })
+}
+menuFunctionClose();
