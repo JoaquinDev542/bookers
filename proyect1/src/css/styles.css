@@ -94,9 +94,9 @@ span {
 .menuOpen.active {
     display: block;
     background-color: red;
-    z-index: 10;
+    z-index: 100;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Menu Open */
