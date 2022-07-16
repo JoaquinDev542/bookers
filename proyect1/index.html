@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es" class="html">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <title>Bookers V1</title>
+
 </head>
 <body class="body">
     
@@ -21,9 +23,9 @@
                 
                     <nav class="nav">
 
-                        <a href="#" class="menu"><img src="assets/images/icons/Hamburguer-Icon-White.svg" alt="Menu icon Hamburger" class="menu__img img"></a>
+                        <a href="#" class="menu" id="menu"><img src="assets/images/icons/Hamburguer-Icon-White.svg" alt="Menu icon Hamburger" class="menu__img img"></a>
 
-                        <div class="menuOpen">
+                        <div class="menuOpen" id="menuOpen">
 
                             <a href="#" class="menuOpen__closeLink"><img src="assets/images/icons/X.svg" alt="Close Menu Icon" class="menuOpen__closeImg img"></a>
 
@@ -363,11 +365,11 @@
         <!-- Section Team -->
         <aside class="team" id="team">
 
-            <h2 class="team__title title">Team</h2>
-
             <div class="teamBoxs">
 
                     <div class="teamBoxFirst">
+
+                        <h2 class="team__title title">Team</h2>
 
                         <article class="teamBox">
 
@@ -393,41 +395,45 @@
 
                     <div class="teamBoxSecond">
 
-                        <article class="teamBox">
+                        <div class="teamBoxContainer">
 
-                            <img src="assets/images/team/gera-booker.jpeg" alt="Booker Club Image" class="teamBox__img img">
-    
-                            <h4 class="teamBox__title">Gera</h4>
-    
-                            <span class="teamBox__work">Tesorería</span>
-    
-                        </article>
+                            <article class="teamBox">
 
-                        <article class="teamBox">
+                                <img src="assets/images/team/gera-booker.jpeg" alt="Booker Club Image" class="teamBox__img img">
+        
+                                <h4 class="teamBox__title">Gera</h4>
+        
+                                <span class="teamBox__work">Tesorería</span>
+        
+                            </article>
+    
+                            <article class="teamBox">
+    
+                                <img src="assets/images/team/pablo-booker.jpeg" alt="Booker Club Image" class="teamBox__img img">
+        
+                                <h4 class="teamBox__title">Pablo Tizon</h4>
+        
+                                <span class="teamBox__work">Co-fundador</span>
+        
+                            </article>
 
-                            <img src="assets/images/team/pablo-booker.jpeg" alt="Booker Club Image" class="teamBox__img img">
-    
-                            <h4 class="teamBox__title">Pablo Tizon</h4>
-    
-                            <span class="teamBox__work">Co-fundador</span>
-    
-                        </article>
+                        </div>
+
+                        <footer class="footer">
+
+                            <p class="footer__paragraph paragraph">All rights reserved &copy;</p>
+            
+                        </footer>
 
                     </div>
 
             </div>
-
-            <footer class="footer">
-
-                <p class="footer__paragraph paragraph">All rights reserved &copy;</p>
-
-            </footer>
 
         </aside>
 
     </main>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script> 
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
